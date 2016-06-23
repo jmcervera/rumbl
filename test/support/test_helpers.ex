@@ -9,7 +9,7 @@ defmodule Rumbl.TestHelpers do
     }, attrs)
 
     %Rumbl.User{}
-      |> Rumbl.User.registration_changest(changes)
+      |> Rumbl.User.registration_changeset(changes)
       |> Repo.insert!()
   end
 
